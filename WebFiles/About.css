@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ef86715e8cfdd978fcb4c89ffd021b752ad086e350f8943dcbc4447f81516d4
-size 390
+#about{
+    position: relative;
+    padding-top: 100px;
+}
+#about h3{
+    text-align: center;
+    font-size: 50px;
+  font-family: "Bitcount Grid Double";
+}
+.about-education{
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    
+}
+.about-educationdetails{
+    background-color: aquamarine;
+    height: 350px;
+    width: 350px;
+}

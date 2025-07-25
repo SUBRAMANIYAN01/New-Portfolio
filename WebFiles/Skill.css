@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bdc3c0fcc1c1dc7b6dd62b1ac4ed2cf630c3cf98a25e23496ab5d64d07e0d7c4
-size 738
+.Skill-wrappermain{
+    display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  justify-items: center;
+  
+ 
+  
+
+  
+}
+.Skill-wrapper {
+ box-shadow: 5px 5px 5px 5px #523402;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  display: flex;              /* Flexbox activates */
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+  transition: transform 0.4s ease-in-out;
+}
+
+
+.skillsset {
+  width: 80%;
+  position:relative;
+  height: 80%;
+  object-fit: contain;
+  
+  
+ 
+}
+.Skill-wrapper:hover{
+  transform: scale(1.05);
+}
+#skills h3{
+    text-align: center;
+    font-size: 50px;
+  font-family: "Bitcount Grid Double";
+}

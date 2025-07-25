@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a9129d878dcd58978540a6b22ce809274b8a98f2f70805143647409d838c40f
-size 998
+document.addEventListener("DOMContentLoaded", () => {
+    const wrappers = document.querySelectorAll(".video-wrapper");
+
+    wrappers.forEach(wrapper => {
+        const video = wrapper.querySelector("video");
+        const button = wrapper.querySelector(".custom-play-btn");
+
+        button.addEventListener("click", () => {
+            if (video.paused) {
+                video.play();
+                video.requestFullscreen();
+                button.textContent = "⏸";
+            } else {
+                video.pause();
+                button.textContent = "▶";
+            }
+        });
+
+        // Handle exit from fullscreen
+        document.addEventListener("fullscreenchange", () => {
+            const isFullScreen = document.fullscreenElement === video;
+            if (!isFullScreen && !video.paused) {
+                video.pause();
+                button.textContent = "▶";
+                video.currentTime=0;
+            }
+        });
+    });
+});

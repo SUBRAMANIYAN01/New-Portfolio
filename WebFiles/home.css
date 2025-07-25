@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dbecd8fcbfcf1bd5c2c8a32e602d50fa8d613d705245c7c716ca1870d9b0574
-size 1619
+html{
+   font-family: "Bitcount Grid Double";
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 150px;
+    border-radius: 30px;
+    
+}
+
+nav {
+    padding-top: 25px;
+    z-index: 1;
+    position: relative;
+    font-family: "Bitcount Grid Double";
+     /* Background color for the nav */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;      /* Remove padding */
+    margin: 0;       /* Remove margin */
+    display: flex;    /* Use flexbox to arrange items in a row */
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Add horizontal space between items */
+}
+
+nav ul li a {
+    color: #fff;            /* Link color */
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 10px 15px;    /* Add padding for better click area */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,transform 0.3s ease-in-out; /* Transition for hover effect */
+    
+}
+nav ul li a:hover {
+    background: #333; /* Change background color on hover */
+    color:#ffebcd;      /* Change text color on hover */
+    transform: scale(1.05);
+
+}
+/* styles.css */
+/*body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding-right: 50px;
+}*/
+.headerbackground{
+    background-color: #8f5c06;
+    position:relative;
+    height: 100px;
+    width: 100%;
+    top: -70px;
+    z-index:-1;
+    border-radius: 25px;
+    
+}
+
