@@ -15,10 +15,17 @@
     
 }
 .about-educationdetails{
-    background-color: #ffe1ad;
+    background-color: #523402;
     text-align:center;
     border-radius: 10px;
-    box-shadow: -8px 8px brown;
+    box-shadow: -8px 8px black;
     height: 150px;
-    width: 350px;
+    width: 400px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+.about-educationdetails p{
+    top: 0%;
 }

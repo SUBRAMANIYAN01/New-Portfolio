@@ -16,7 +16,8 @@ nav {
     z-index: 1;
     position: relative;
     font-family: "Bitcount Grid Double";
-    background-color: #8f5c06;
+    background-color: #333;
+    
      /* Background color for the nav */
 }
 
@@ -66,3 +67,20 @@ nav ul li a:hover {
     
 }
 
+.Resumelink a {
+    color: white;
+    background-color: #8f5c06; /* Optional for button-like style */
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-family:Arial, Helvetica, sans-serif;
+    left: 500px;
+    
+  
+}
+
+.Resumelink a:hover {
+    background-color: #a66d08;
+}
