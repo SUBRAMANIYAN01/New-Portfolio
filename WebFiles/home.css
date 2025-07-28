@@ -84,3 +84,19 @@ nav ul li a:hover {
 .Resumelink a:hover {
     background-color: #a66d08;
 }
+.text-slider {
+  height: 50px;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#role-text {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+}
