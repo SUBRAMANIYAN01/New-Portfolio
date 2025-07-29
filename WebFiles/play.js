@@ -30,22 +30,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const roles = [
-  "Unreal Game Developer",
-  "Unity Game Developer",
-  "3D Artist",
-  "Software Developer"
+  "an Unreal Game Developer",
+  "an Unity Game Developer",
+  "a 3D Artist",
+  "a Software Developer"
 ];
 
 const roleText = document.getElementById("role-text");
 let index = 0;
 
 setInterval(() => {
-  // Slide up (fade out)
+  // Fade out and slide up
   roleText.style.opacity = "0";
   roleText.style.transform = "translateY(-20px)";
 
   setTimeout(() => {
-    // Change text after fade out
     index = (index + 1) % roles.length;
     roleText.textContent = roles[index];
 
@@ -56,4 +55,11 @@ setInterval(() => {
       roleText.style.transform = "translateY(0)";
     }, 50);
   }, 500);
-}, 3000); // 3 seconds per role
+}, 2400);
+
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });}

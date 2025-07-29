@@ -4,6 +4,8 @@
     background-color: black;
     color: white;
     font-size: medium;
+    position: relative;
+    height: 250px;
 }
 
 .contact-link:hover {
@@ -15,3 +17,41 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+
+.backtotopbutton{
+  background-color: white;
+  width: 5cap;
+  height: 50px;
+  right: 20px;
+  vertical-align:middle;
+ 
+  top:3px;
+  position: absolute;
+}
+.uparrow{
+  width: 20px;           /* Adjust width */
+  height: 20px;          /* Adjust height */
+       /* Space between text and icon */
+ 
+  transition: transform 0.3s ease-in-out;
+}
+
+.backtotopbutton:hover{
+  transform: scale(1.05);
+}
+.profilephotocontact{
+ width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center 10%;
+} 
+.circle-frontcontact{
+  width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+    object-fit: contain;}

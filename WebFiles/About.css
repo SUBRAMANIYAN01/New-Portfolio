@@ -1,6 +1,7 @@
 #about{
     position: relative;
-    padding-top: 100px;
+    padding-top: 200px;
+    margin-top: 100px;
 }
 #about h3{
     text-align: center;
@@ -12,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    
+    padding-top: 20px;    
 }
 .about-educationdetails{
     background-color: #523402;
@@ -29,3 +30,14 @@
 .about-educationdetails p{
     top: 0%;
 }
+.about-description{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    display: flex;
+    text-align: justify;
+    
+}
+

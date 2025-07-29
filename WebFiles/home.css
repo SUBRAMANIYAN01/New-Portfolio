@@ -8,7 +8,7 @@ header {
     text-align: center;
     height: 150px;
     border-radius: 30px;
-    
+   position: relative;
 }
 
 nav {
@@ -65,18 +65,27 @@ nav ul li a:hover {
     z-index:-1;
     border-radius: 25px;
     
+    
+}
+.Resumelink{
+     right: 20px;
+     top: 50px;
+  position: absolute;
+   
 }
 
 .Resumelink a {
     color: white;
-    background-color: #8f5c06; /* Optional for button-like style */
+    background-color: white; /* Optional for button-like style */
     padding: 10px 15px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
     font-family:Arial, Helvetica, sans-serif;
-    left: 500px;
+    position: relative;
+    color: #333;
+    
     
   
 }
@@ -84,19 +93,81 @@ nav ul li a:hover {
 .Resumelink a:hover {
     background-color: #a66d08;
 }
+
+.DownloadIcon{
+    width: 20px;           /* Adjust width */
+  height: 20px;          /* Adjust height */
+  margin-left: 5px;      /* Space between text and icon */
+  vertical-align: middle; /* Align with the text */
+}
+
+
+
 .text-slider {
   height: 50px;
   overflow: hidden;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin-top: -450px; 
+     /* Move it higher */
+  margin-right:450px; 
 }
+
 
 #role-text {
   display: inline-block;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+ 
+  min-width: 50px;   /* Adjust as needed for your longest title */
+  min-height: 1em;    /* Prevent vertical jitter */
+}
+
+.text-slider h3{
+   display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.small-aboutme{
+    position: relative;
+    padding-left: 300px;
+    padding-right: 150px;
+    top: -100px;
+    display: inline-flex;
+    align-items: end;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    text-align: justify;
+    
+    
+    
+}
+.project-sc{
+    position: relative;
+    display: flex;
+    right: -80%;
+    top:-80px;
+   justify-content: center;
+  align-items:center;
+    background-color: #8f5c06;
+    color: #fff;
+    height: 80px;
+    width: fit-content;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+  
+}
+.small-aboutme p{
+    
+    padding: 20px;
+    border-radius: 10px;
 }
