@@ -31,8 +31,8 @@ a {
   position: absolute;
 }
 .uparrow{
-  width: 20px;           /* Adjust width */
-  height: 20px;          /* Adjust height */
+  width: 1rem;           /* Adjust width */
+  height: 1rem;          /* Adjust height */
        /* Space between text and icon */
  
   transition: transform 0.3s ease-in-out;
