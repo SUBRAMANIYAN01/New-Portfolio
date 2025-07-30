@@ -5,12 +5,13 @@
     color: white;
     font-size: medium;
     position: relative;
-    height: 250px;
-}
+    height:15rem;
+    margin-top: 20%;
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
 
-.contact-link:hover {
-  color: #ffe1ad; 
-}
+
 
 
 a {

@@ -59,3 +59,34 @@ video {
   font-size: 50px;
   font-family: "Bitcount Grid Double";
 }
+
+
+.carracetext{
+  text-align: justify;
+  font-weight: normal;
+}
+.overlay-text{
+  top: -5%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+#experience-container {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: justify;
+  margin-top: 10%;
+}
+
+#experience-container h1 {
+  margin-bottom: 20px;
+}
+
+.internships {
+  font-size: 20px;
+  font-weight: normal;
+}
