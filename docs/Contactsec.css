@@ -44,3 +44,55 @@ a {
   transform: scale(1.05);
 }
 
+
+/* MEDIA QUERY CODE*/
+@media only screen and (max-width: 768px) {
+
+  #contact {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    height:auto;
+    
+    
+   
+    z-index: 10;
+    width: auto;
+  }
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.backtotopbutton{
+  
+  background-color: white;
+  width: auto;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-left: 20%;
+  position: relative;
+   cursor: pointer;
+   justify-content: center;
+}
+.uparrow{
+  width: 1rem;           /* Adjust width */
+  height: 1rem;          /* Adjust height */
+       /* Space between text and icon */
+ 
+  transition: transform 0.3s ease-in-out;
+}
+
+.backtotopbutton:hover{
+  transform: scale(1.05);
+}
+
+}

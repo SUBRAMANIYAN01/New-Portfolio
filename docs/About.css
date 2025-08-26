@@ -1,8 +1,10 @@
 #about{
     position: relative;
-    padding-top: 200px;
-    margin-top: 100px;
+    margin-top: 300px;
+   
+    
 }
+
 #about h3{
     text-align: center;
     font-size: 50px;
@@ -12,8 +14,9 @@
    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    padding-top: 20px;    
+    justify-content: center;
+    padding-top: 20px; 
+    margin-left: 1rem;   
 }
 .about-educationdetails{
     background-color: #523402;
@@ -41,3 +44,60 @@
     
 }
 
+
+/* MEDIA QUERY CODE*/
+@media only screen and (max-width: 768px) {
+
+#about{
+    margin: 0;
+    
+    position: relative;
+    width: 100%;
+   
+}
+#about h3{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Bitcount Grid Double";
+    
+}
+.about-description{
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    /* padding-left: 75px;
+    padding-right: 75px; */
+    display: flex;
+    position: relative;
+    text-align: justify;
+    
+
+    
+}
+.about-education {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+.about-educationdetails{
+    
+    background-color: #523402;
+    text-align:center;
+    border-radius: 10px;
+    box-shadow: -8px 8px black;
+    height: auto;
+    width: auto;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+
+}
+.about-educationdetails p{
+    top: 0%;
+}
+
+
+}
