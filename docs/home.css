@@ -3,6 +3,7 @@ html{
    scroll-behavior: smooth;
 }
 header {
+    
     background: #333;
     color: #fff;
     padding: 20px 0;
@@ -10,7 +11,7 @@ header {
     height: 150px;
     width: 100%;
     border-radius: 30px;
-   position: relative;
+    position: relative;
    
 }
 .Portfolioicon{
@@ -64,6 +65,7 @@ nav ul li a:hover {
     padding-right: 50px;
 }*/
 .headerbackground{
+    
     background-color: #8f5c06;
     position:relative;
     height: 100px;
@@ -198,6 +200,7 @@ nav ul li a:hover {
 /* MEDIA QUERY CODE*/
 @media only screen and (max-width: 768px) {
     html{
+        
    font-family: "Bitcount Grid Double";
 }
 header {
@@ -205,10 +208,12 @@ header {
     color: #fff;
     padding: 15px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 0px;
     width: 100%;      /* always full width */
-    height: auto;     /* let it grow naturally */
+    height: 250px;     /* let it grow naturally */
     position: relative;
+    /* box-shadow:10px 0px 1px 100px #8f5c06 ; */
+    
     
 }
 .Portfolioicon{
@@ -223,6 +228,7 @@ nav {
     padding-top: 25px;
     z-index: 1;
     position: relative;
+    font-size: 1rem;
     font-family: "Bitcount Grid Double";
     background-color: #333;
     
@@ -233,19 +239,19 @@ nav {
 }
 
 nav ul {
-    flex-direction: column;
-    gap: 10px;    
+    flex-direction: row;
+    gap: 0px;
 }
 
 nav ul li {
-    margin: 5px 0; /* Add horizontal space between items */
+    margin: 5px 0px; /* Add horizontal space between items */
 }
 
 nav ul li a {
     color: #fff;            /* Link color */
     text-decoration: none; 
     display: inline-block; 
-    padding: 10px 15px;    /* Add padding for better click area */
+    padding: 10px 5px;    /* Add padding for better click area */
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,transform 0.3s ease-in-out; /* Transition for hover effect */
     
 }
@@ -261,7 +267,7 @@ nav ul li a:hover {
       position: relative; /* don’t absolutely position on mobile */
     top: auto;
     right: auto;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
    
 }
@@ -287,7 +293,7 @@ nav ul li a:hover {
 }
 
 .DownloadIcon{
-    width: 20px;           /* Adjust width */
+  width: 20px;           /* Adjust width */
   height: 20px;          /* Adjust height */
   margin-left: 5px;      /* Space between text and icon */
   vertical-align: middle; /* Align with the text */
