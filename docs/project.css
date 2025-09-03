@@ -32,7 +32,9 @@ video {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   flex-wrap:wrap;
-  align-content: space-between;
+  align-content: space-evenly;
+  justify-content: space-between;
+    justify-items: center;
   gap:50px;
   
 }
@@ -63,12 +65,12 @@ video {
 
 .carracetext{
   text-align: justify;
-  font-weight: normal;
+  font-weight: bold;
 }
 .overlay-text{
   top: -5%;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+  font-weight:bolder;
   font-size: 100%;
 }
 

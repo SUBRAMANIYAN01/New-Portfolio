@@ -113,6 +113,7 @@ nav ul li a:hover {
 
 
 .text-slider {
+  
   height: 50px;
   overflow: hidden;
   font-size: 30px;
@@ -122,9 +123,9 @@ nav ul li a:hover {
   align-items:center;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  margin-top: -450px; 
-     /* Move it higher */
-  margin-right:450px; 
+  
+  
+
 
   
 }
@@ -148,9 +149,8 @@ nav ul li a:hover {
 
 .small-aboutme{
     position: relative;
-    padding-left: 300px;
-    padding-right: 150px;
-    top: -100px;
+    margin-left: 25%;
+    margin-right: 25%;
     display: inline-flex;
     align-items: end;
     font-family:Arial, Helvetica, sans-serif;
@@ -302,7 +302,8 @@ nav ul li a:hover {
 
 
 .text-slider {
-    margin: 0 auto;
+    
+     margin-top: 20%;
     font-size: 20px;
     text-align: center;
     position: relative;
@@ -314,6 +315,7 @@ nav ul li a:hover {
 }
 
 #role-text {
+   
   display: inline-block;
   transition: all 0.5s ease;
   opacity: 1;
@@ -336,8 +338,9 @@ nav ul li a:hover {
 }
 
 .small-aboutme{
-    margin-top: 10px;
-     padding: 15px;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right:15%;
     font-size: 15px;
     top: auto;
     display: block;
