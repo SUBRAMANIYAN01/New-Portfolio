@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (video.paused) {
                 video.play();
                 video.requestFullscreen();
-               
+
                 button.textContent = "⏸";
             } else {
                 video.pause();
