@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (video.paused) {
                 video.play();
                 video.requestFullscreen();
+                if(window.screen.width<720){
+                  screen.orientation.lock('landscape');
+                }
                 button.textContent = "⏸";
             } else {
                 video.pause();
