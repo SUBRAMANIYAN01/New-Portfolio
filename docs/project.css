@@ -137,6 +137,7 @@ video {
 
 
 .custom-play-btn {
+  visibility: hidden;
    position: absolute;
    top: 25%; 
    align-items: center;
