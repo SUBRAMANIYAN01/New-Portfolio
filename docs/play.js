@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 video.pause();
                 button.textContent = "▶";
                 video.currentTime=0;
+                if(window.screen.width<720){
+                  screen.orientation.lock('vertical');
+                }
             }
         });
     });
