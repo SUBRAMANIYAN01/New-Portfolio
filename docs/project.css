@@ -122,6 +122,7 @@ video {
 }
 
 .video-wrapper {
+ 
   position: relative;
   display: inline-block;
   
@@ -137,7 +138,7 @@ video {
 
 
 .custom-play-btn {
-  
+     visibility: visible;
    position: absolute;
    top: 25%; 
    align-items: center;
