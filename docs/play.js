@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (video.paused) {
                 video.play();
                 video.requestFullscreen();
-                if(window.screen.width<720){
-                  screen.orientation.lock('landscape');
-                }
+               
                 button.textContent = "⏸";
             } else {
                 video.pause();
@@ -26,9 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 video.pause();
                 button.textContent = "▶";
                 video.currentTime=0;
-                if(window.screen.width<720){
-                  screen.orientation.lock('portrait');
-                }
+               
             }
         });
     });
