@@ -22,10 +22,7 @@
   justify-content: center;    /* Center horizontally */
   align-items: center;        /* Center vertically */
   transition: transform 0.4s ease-in-out;
-    object-fit: cover;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    
 }
 
 .ThreeDImages img:hover {
