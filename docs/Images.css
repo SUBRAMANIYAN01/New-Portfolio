@@ -7,10 +7,10 @@
    ThreeD IMAGES GRID
 ========================= */
 .ThreeDImages {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-    margin-bottom: 50px;
+   display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  justify-items: center;
 }
 
 .ThreeDImages img {
