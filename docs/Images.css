@@ -1,0 +1,110 @@
+.ThreeD {
+    width: 100%;
+    padding: 50px 6%;
+}
+
+/* =========================
+   ThreeD IMAGES GRID
+========================= */
+.ThreeDImages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.ThreeDImages img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.ThreeDImages img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   ThreeD ANIMATIONS (VIDEOS)
+========================= */
+.ThreeDAnimations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* =========================
+   VIDEO CARD
+========================= */
+.ThreeDVideos {
+    border-radius: 18px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ThreeDVideos video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   DESKTOP (PC)
+========================= */
+@media (min-width: 1024px) {
+    .ThreeD {
+        padding: 70px 10%;
+    }
+
+    .ThreeDImages {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .ThreeDAnimations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1023px) and (min-width: 600px) {
+    .ThreeDImages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ThreeDAnimations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 599px) {
+    .ThreeD {
+        padding: 30px 16px;
+    }
+
+    .ThreeDImages {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ThreeDAnimations {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .ThreeDImages img {
+        border-radius: 14px;
+    }
+
+    .ThreeDVideos {
+        border-radius: 14px;
+    }
+}
