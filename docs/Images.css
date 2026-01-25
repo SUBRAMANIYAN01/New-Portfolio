@@ -3,48 +3,58 @@
 ========================= */
 .ThreeD {
   width: 100%;
-  padding: 50px 6%;
+  max-width: 1200px;   /* match projects width */
+  margin: 0 auto;      /* centers section */
+  padding: 40px 20px;
+
+   --img-card-w: 380px;
+  --img-card-h: 260px;
+  --img-gap: 55px;
 }
 
-/* =========================
-   THREE D IMAGES (LIKE SKILLS)
-========================= */
+/* GRID */
 .ThreeDImages {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+   display: grid;
+  grid-template-columns: repeat(auto-fit, var(--img-card-w));
+  gap: var(--img-gap);
+  justify-content: center;
   justify-items: center;
-  margin-bottom: 60px;
 }
 
+/* IMAGE CARD (same size for all) */
 .ThreeDImages img {
-  width: 200px;
-  height: 200px;
+    width: var(--img-card-w);
+  height: var(--img-card-h);
+  padding: 12px;
   object-fit: contain;
-  box-shadow: 5px 5px 5px 5px #523402;
-  transition: transform 0.4s ease-in-out;
+  background-color: #dbbc88;
+  box-shadow: 5px 5px 5px #523402;
+
+  display: block;
+}
+.ThreeD h1{
+    font-size: 50px;
+  font-family: "Bitcount Grid Double";
 }
 
-.ThreeDImages img:hover {
-  transform: scale(1.05);
-}
+
 
 /* =========================
    THREE D VIDEOS (LIKE PROJECTS)
 ========================= */
 .ThreeDAnimations {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  justify-items: center;
+   display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 25px;
+  justify-content: center;
 }
 
 .ThreeDVideos {
   position: relative;
   width: 400px;
-  height: 500px;
-  background-color: #dbbc88;
-  box-shadow: 15px -15px #523402;
+  height: 400px;
+  /* background-color: #dbbc88;
+  box-shadow: 15px -15px #523402; */
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -52,7 +62,7 @@
 }
 
 .ThreeDVideos video {
-  width: 380px;
+  width: 500;
   height: 250px;
   border-radius: 20px;
   background-color: rgb(58, 55, 55);
@@ -65,8 +75,13 @@
 
   /* Images */
   .ThreeDImages {
-    grid-template-columns: repeat(3, 1fr);
+    --img-card-w: 100px;
+    --img-card-h: 100px;
+    --img-gap: 10px;
+   grid-template-columns: repeat(3, 100px);
     gap: 10px;
+
+    justify-content: center; /* ✅ center on mobile too */
   }
 
   .ThreeDImages img {
@@ -77,19 +92,32 @@
 
   /* Videos */
   .ThreeDAnimations {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 170px);
+    justify-content: center;
   }
 
   .ThreeDVideos {
     width: 170px;
     height: auto;
-    box-shadow: 5px -5px #523402;
+   
   }
 
   .ThreeDVideos video {
     width: 125px;
     height: 100px;
     border-radius: 10px;
+  }
+  .ThreeD h1{
+    font-size: 45px;
+  font-family: "Bitcount Grid Double";
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .ThreeD {
+    --img-card-w: 460px;
+    --img-card-h: 320px;
+    --img-gap: 70px;
   }
 }
